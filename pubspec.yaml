@@ -16,7 +16,7 @@ dependencies:
     # web支持 dart 3.2 + 暂时注释
   #  web: ^1.0.0
   #  plugin_platform_interface: ^2.1.8
-  plugin_platform_interface: ^2.1.6
+  plugin_platform_interface: 2.1.5
   flutter_web_plugins:
     sdk: flutter
 
