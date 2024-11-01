@@ -5,14 +5,18 @@ repository: https://github.com/gabrimatic/restart_app
 issue_tracker: https://github.com/gabrimatic/restart_app/issues
 
 environment:
-  sdk: ^3.5.1
-  flutter: ">=1.17.0"
+  #  sdk: ^3.5.1
+  #  flutter: ">=1.17.0"
+  sdk: ">=2.19.0 <3.0.0"
+  flutter: ">=2.5.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  web: ^1.0.0
-  plugin_platform_interface: ^2.1.8
+    # web支持 dart 3.2 + 暂时注释
+  #  web: ^1.0.0
+  #  plugin_platform_interface: ^2.1.8
+  plugin_platform_interface: ^2.1.6
   flutter_web_plugins:
     sdk: flutter
 
@@ -28,8 +32,8 @@ flutter:
         pluginClass: RestartPlugin
       ios:
         pluginClass: RestartAppPlugin
-      web:
-        pluginClass: RestartWeb
-        fileName: restart_web.dart
+      #      web:
+      #        pluginClass: RestartWeb
+      #        fileName: restart_web.dart
       ohos:
         pluginClass: RestartPlugin
